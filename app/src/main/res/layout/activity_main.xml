@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/fail"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/fail"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/tacobell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maracas"
+        app:srcCompat="@drawable/fail"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/wow"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/wow"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tacobell"
+        app:layout_constraintTop_toBottomOf="@+id/sad"
+        app:srcCompat="@drawable/wow" />
+
+    <ImageButton
+        android:id="@+id/burgerking"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/burgerking"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/spongebob"
+        app:layout_constraintStart_toEndOf="@+id/standing"
+        app:layout_constraintTop_toBottomOf="@+id/john"
+        app:srcCompat="@drawable/dalfbk" />
+
+    <ImageButton
+        android:id="@+id/maracas"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/maracas"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/tacobell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/standing"
+        app:srcCompat="@drawable/maracas" />
+
+    <ImageButton
+        android:id="@+id/john"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/john"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/spongebob"
+        app:layout_constraintStart_toEndOf="@+id/standing"
+        app:layout_constraintTop_toBottomOf="@+id/tacobell"
+        app:srcCompat="@drawable/john" />
+
+    <ImageButton
+        android:id="@+id/sad"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/sad"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tacobell"
+        app:layout_constraintTop_toBottomOf="@+id/spongebob"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageButton
+        android:id="@+id/standing"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/standing"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/tacobell"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/standing" />
+
+    <ImageButton
+        android:id="@+id/tacobell"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/tacobell"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/spongebob"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/standing"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tacobell" />
+
+    <ImageButton
+        android:id="@+id/spongebob"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/spongebob"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tacobell"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spongebob" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

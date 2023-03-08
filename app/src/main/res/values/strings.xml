@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SoundBoard App</string>
+    <string name="spongebob">spongebob</string>
+    <string name="standing">standing</string>
+    <string name="maracas">maracas</string>
+    <string name="burgerking">burgerking</string>
+    <string name="sad">sad</string>
+    <string name="john">john</string>
+    <string name="wow">wow</string>
+    <string name="tacobell">tacobell</string>
+    <string name="fail">fail</string>
+</resources>
