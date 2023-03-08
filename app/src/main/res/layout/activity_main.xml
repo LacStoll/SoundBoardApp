@@ -14,7 +14,9 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/fail"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tacobell"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/maracas"
         app:srcCompat="@drawable/fail"
@@ -28,7 +30,9 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/wow"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tacobell"
         app:layout_constraintTop_toBottomOf="@+id/sad"
         app:srcCompat="@drawable/wow" />
@@ -41,7 +45,9 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/burgerking"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spongebob"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/standing"
         app:layout_constraintTop_toBottomOf="@+id/john"
         app:srcCompat="@drawable/dalfbk" />
@@ -54,7 +60,9 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/maracas"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/fail"
         app:layout_constraintEnd_toStartOf="@+id/tacobell"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/standing"
         app:srcCompat="@drawable/maracas" />
@@ -67,7 +75,9 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/john"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/burgerking"
         app:layout_constraintEnd_toStartOf="@+id/spongebob"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/standing"
         app:layout_constraintTop_toBottomOf="@+id/tacobell"
         app:srcCompat="@drawable/john" />
@@ -80,7 +90,9 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/sad"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/wow"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tacobell"
         app:layout_constraintTop_toBottomOf="@+id/spongebob"
         app:srcCompat="@drawable/sad" />
@@ -89,42 +101,57 @@
         android:id="@+id/standing"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_marginTop="60dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/standing"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/maracas"
         app:layout_constraintEnd_toStartOf="@+id/tacobell"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/standing" />
 
     <ImageButton
         android:id="@+id/tacobell"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_marginTop="60dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/tacobell"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/john"
         app:layout_constraintEnd_toStartOf="@+id/spongebob"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/standing"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/tacobell" />
 
     <ImageButton
         android:id="@+id/spongebob"
         android:layout_width="105dp"
         android:layout_height="105dp"
-        android:layout_marginTop="60dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/spongebob"
         android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/sad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tacobell"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/spongebob" />
+
+    <TextView
+        android:id="@+id/Titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/sound_board"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/tacobell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
